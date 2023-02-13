@@ -24,11 +24,44 @@ class ColorPalette extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         // vamos a mostrar los elementos en un row
         child: Row(children: [
+                Expanded(
+            flex: 4,
+            child: GestureDetector(
+              onTap: () => callback(baseColor.toString()),
+              child: Container(
+                height: 100,
+                color: ColorUtils.FromHex(baseColor),
+              ),
+            ),
+          ),
           Expanded(
-              flex: 4,
-              child: GestureDetector(
-                  child: Container(
-                      height: 100, color: ColorUtils.FromHex(baseColor))))
-        ]));
+            flex: 3,
+            child: GestureDetector(
+              onTap: () => callback(baseColor2.toString()),
+              child: Container(
+                height: 100,
+                color: ColorUtils.FromHex(baseColor2),
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: GestureDetector(
+              onTap: () => callback(baseColor3.toString()),
+              child: Container(
+                height: 100,
+                color: ColorUtils.FromHex(baseColor3),
+              ),
+            ),
+          ),
+          Expanded(
+            child: GestureDetector(
+              onTap: () => callback(baseColor4.toString()),
+              child: Container(
+                height: 100,
+                color: ColorUtils.FromHex(baseColor4),
+              ),
+            ),
+          )]));
   }
 }

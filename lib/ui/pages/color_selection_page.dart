@@ -50,6 +50,27 @@ class ColorSelectionPage extends StatelessWidget {
               baseColor4: 'FEDEFF',
               callback: showColor,
             ),
+            ColorPalette(
+              baseColor: '635985',
+              baseColor2: '443C68',
+              baseColor3: '393053',
+              baseColor4: '18122B',
+              callback: showColor,
+            ),
+            ColorPalette(
+              baseColor: '3D1766',
+              baseColor2: '6F1AB6',
+              baseColor3: 'FF0032',
+              baseColor4: 'CD0404',
+              callback: showColor,
+            ),
+            ColorPalette(
+              baseColor: 'A75D5D',
+              baseColor2: 'D3756B',
+              baseColor3: 'F0997D',
+              baseColor4: 'FFC3A1',
+              callback: showColor,
+            ),
           ]),
         ))));
   }
@@ -65,3 +86,5 @@ class ColorSelectionPage extends StatelessWidget {
     );
   }
 }
+
+
